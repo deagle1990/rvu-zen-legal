@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RVU Zen – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.12);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 60%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 860px;
+      background: linear-gradient(145deg, #020617 0, #020617 40%, #020617ee 100%);
+      border-radius: 20px;
+      padding: 28px 22px 32px;
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 22px 60px rgba(15, 23, 42, 0.9),
+        inset 0 0 0 0.5px rgba(148, 163, 184, 0.35);
+    }
+
+    @media (min-width: 720px) {
+      .card {
+        padding: 32px 32px 36px;
+      }
+    }
+
+    header {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-muted);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .shield {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      border: 1px solid rgba(34, 197, 94, 0.7);
+      box-shadow:
+        inset 0 0 0 1px rgba(22, 163, 74, 0.5),
+        0 0 0 4px rgba(34, 197, 94, 0.2);
+      position: relative;
+    }
+
+    .shield::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: radial-gradient(circle at 30% 0, #bbf7d0, #16a34a);
+      clip-path: polygon(0 0, 100% 0, 100% 55%, 50% 100%, 0 55%);
+    }
+
+    h1 {
+      margin: 12px 0 4px;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    p {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin: 6px 0 10px 1.2rem;
+      padding-left: 0.4rem;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .section {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top left, #020617 0, #020617 60%, #020617 100%);
+      border: 1px solid rgba(22, 163, 74, 0.55);
+      margin-bottom: 10px;
+    }
+
+    .section:nth-of-type(even) {
+      border-color: rgba(74, 222, 128, 0.5);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(34, 197, 94, 0.6);
+      margin-top: 6px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+
+    a {
+      color: #4ade80;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(148, 163, 184, 0.4);
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header>
+        <div class="app-badge">
+          <span class="shield"></span>
+          RVU Zen · Privacy First
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">
+          RVU Zen is designed to keep your data local, simple, and under your control.
+        </p>
+        <div class="meta-row">
+          <span class="meta-pill">Last Updated: November 14, 2025</span>
+          <span class="meta-pill">Scope: RVU Zen iOS App</span>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>1. Overview</h2>
+        <p>
+          RVU Zen (&quot;the App&quot;) respects your privacy. This Privacy Policy describes what data the App
+          stores, how that data is handled, and what control you have over it.
+        </p>
+        <div class="highlight">
+          <strong>Key principle:</strong> RVU Zen is a <strong>local-only, offline-first app</strong>.
+          All data you enter is stored on your device using Apple’s SwiftData framework.
+          The developer does not operate a backend server for the App and does not receive your data.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>2. Data the App Stores</h2>
+        <p>
+          The App stores only the information you manually enter or configure. This may include:
+        </p>
+        <ul>
+          <li>CPT codes and related descriptions.</li>
+          <li>wRVU values and conversion factors.</li>
+          <li>Encounter dates, times, and durations.</li>
+          <li>Optional notes you add to an entry.</li>
+          <li>
+            Optional identifiers (such as Name, MRN, FIN, DOB, or &quot;Other&quot;), if you choose to enter them.
+          </li>
+          <li>Settings and preferences, such as display options or export settings.</li>
+        </ul>
+        <p>
+          This information is stored <strong>only on your device</strong> in the App’s local storage.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. No PHI Requirement and No PHI Collection</h2>
+        <p>
+          RVU Zen is designed so that use of the App does not require you to enter Protected Health Information
+          (&quot;PHI&quot;) as defined under HIPAA.
+        </p>
+        <p>
+          The developer does not request, collect, or receive PHI. Any identifiable information you choose to enter
+          into the App remains on your device and is not transmitted to the developer.
+        </p>
+        <div class="highlight">
+          <strong>Your choice:</strong> If you elect to enter identifiable information (such as patient names
+          or IDs), you are responsible for doing so in a way that complies with your local laws, your institution’s
+          policies, and any relevant professional obligations.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>4. Local-Only Storage</h2>
+        <p>
+          RVU Zen does not send your locally stored data to any third-party analytics service, advertising network,
+          or custom backend maintained by the developer.
+        </p>
+        <p>
+          Your data may still be included in:
+        </p>
+        <ul>
+          <li>Encrypted device backups made via iCloud or iTunes/Finder, if you have enabled them.</li>
+          <li>Files you intentionally export or share (for example, PDF exports via the iOS share sheet).</li>
+        </ul>
+        <p>
+          These mechanisms are controlled by you and by Apple’s system services, not by the App’s developer.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>5. Subscriptions and Payments</h2>
+        <p>
+          RVU Zen uses Apple’s in-app purchase system for subscriptions. All payment processing, billing details,
+          and purchase history are handled entirely by Apple.
+        </p>
+        <p>RVU Zen does not have access to:</p>
+        <ul>
+          <li>Your full payment method (credit card number, bank account, etc.).</li>
+          <li>Your billing address or detailed transaction history beyond what Apple exposes via APIs.</li>
+          <li>Your Apple ID credentials.</li>
+        </ul>
+        <p>
+          To review or manage purchase history and subscriptions, use your device settings under
+          <strong>Apple ID &gt; Subscriptions</strong>.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. No Third-Party Analytics or Tracking</h2>
+        <p>
+          The App does <strong>not</strong> integrate third-party analytics SDKs, advertising SDKs, or
+          tracking pixels. The App does not:
+        </p>
+        <ul>
+          <li>Track your activity across other apps or websites.</li>
+          <li>Collect device identifiers for advertising (IDFA) or similar purposes.</li>
+          <li>Send usage data to external analytics providers.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Security and Your Responsibilities</h2>
+        <p>
+          While RVU Zen stores data locally and does not transmit it to the developer, the security of your data
+          also depends on how you protect your device.
+        </p>
+        <p>You are responsible for:</p>
+        <ul>
+          <li>Using a secure device passcode, Face ID, or Touch ID where available.</li>
+          <li>Controlling who has physical access to your device.</li>
+          <li>Managing your backups (e.g., using encrypted iCloud backups).</li>
+          <li>Handling exported files carefully and storing or transmitting them securely.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>8. Data Deletion</h2>
+        <p>You can delete your data in two main ways:</p>
+        <ul>
+          <li>
+            Use in-app options such as &quot;Delete All Entries&quot; (if available) to clear your locally
+            stored encounter data.
+          </li>
+          <li>
+            Delete the App from your device. This will remove the App and its associated local data from that device.
+          </li>
+        </ul>
+        <p>
+          If your data is included in encrypted device or iCloud backups, it may remain in those backups until
+          they are rotated or deleted according to your backup settings.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Children’s Privacy</h2>
+        <p>
+          RVU Zen is intended for use by adult professionals or individuals managing their own productivity,
+          not for use by children. The App does not knowingly collect personal data from children under 13.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time to reflect changes in the App or applicable law.
+          When changes are made, the &quot;Last Updated&quot; date at the top of this page will be revised.
+        </p>
+        <p>
+          Your continued use of RVU Zen after an updated policy has been posted indicates that you accept the changes.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or privacy practices related to RVU Zen, you may contact
+          the developer at:<br />
+          <a href="mailto:rvuzen@protonmail.com">rvuzen@protonmail.com</a>
+        </p>
+      </section>
+
+      <p class="footer-note">
+        RVU Zen is intentionally designed with a simple, local-only storage model to limit data exposure and reduce
+        complexity. Please review this policy periodically to stay informed about how your data is handled.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
