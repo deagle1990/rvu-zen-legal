@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RVU Zen – Terms of Use</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #0b1120;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 860px;
+      background: linear-gradient(145deg, #020617 0, #020617 40%, #020617ee 100%);
+      border-radius: 20px;
+      padding: 28px 22px 32px;
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 22px 60px rgba(15, 23, 42, 0.9),
+        inset 0 0 0 0.5px rgba(148, 163, 184, 0.35);
+    }
+
+    @media (min-width: 720px) {
+      .card {
+        padding: 32px 32px 36px;
+      }
+    }
+
+    header {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-muted);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .app-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18);
+    }
+
+    h1 {
+      margin: 12px 0 4px;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    p {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin: 6px 0 10px 1.2rem;
+      padding-left: 0.4rem;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .section {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top left, #020617 0, #020617 55%, #020617 100%);
+      border: 1px solid rgba(30, 64, 175, 0.5);
+      margin-bottom: 10px;
+    }
+
+    .section:nth-of-type(even) {
+      border-color: rgba(56, 189, 248, 0.45);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(56, 189, 248, 0.5);
+      margin-top: 6px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(148, 163, 184, 0.4);
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header>
+        <div class="app-badge">
+          <span class="app-dot"></span>
+          RVU Zen · iOS App
+        </div>
+        <h1>Terms of Use (Subscription License Agreement)</h1>
+        <p class="subtitle">
+          Please read these terms carefully before using RVU Zen.
+        </p>
+        <div class="meta-row">
+          <span class="meta-pill">Last Updated: November 14, 2025</span>
+          <span class="meta-pill">Applies to: RVU Zen</span>
+        </div>
+      </header>
+
+      <p>
+        These Terms of Use (&quot;Terms&quot;) form a legally binding agreement between you (&quot;User&quot;)
+        and RVU Zen (the &quot;App&quot;). By downloading, accessing, or using the App, you agree to these Terms.
+        If you do not agree, do not use the App.
+      </p>
+
+      <section class="section">
+        <h2>1. License Grant</h2>
+        <p>
+          RVU Zen grants you a personal, non-exclusive, non-transferable, revocable license to use the App
+          for your own internal, professional, or personal productivity purposes. The App is licensed, not sold.
+        </p>
+        <p>You may not:</p>
+        <ul>
+          <li>Reverse engineer, decompile, or modify the App.</li>
+          <li>Distribute, resell, or sublicense the App.</li>
+          <li>Use the App in violation of any applicable laws or professional obligations.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>2. Subscription and Payment</h2>
+        <p>
+          Certain features of the App require an auto-renewing subscription (&quot;RVU Zen Pro&quot;),
+          processed through Apple’s App Store using StoreKit.
+        </p>
+        <p>By starting a subscription, you agree that:</p>
+        <ul>
+          <li>Apple manages billing, renewal, and cancellation for your subscription.</li>
+          <li>Subscription prices may change at Apple’s discretion.</li>
+          <li>
+            You can manage or cancel your subscription in your device settings under
+            <strong>Apple ID &gt; Subscriptions</strong>.
+          </li>
+          <li>Refunds, where applicable, are handled solely by Apple.</li>
+        </ul>
+        <p>
+          If your subscription lapses or is canceled, access to premium features will be revoked until renewed.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Free Trial</h2>
+        <p>
+          If offered, a free trial is available to eligible new users. At the end of the trial period, your
+          subscription automatically converts to a paid subscription unless you cancel at least 24 hours
+          before the trial ends.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. Local Data Storage and No PHI</h2>
+        <p>
+          RVU Zen stores all data <strong>locally on your device</strong> using Apple’s SwiftData framework.
+          The App:
+        </p>
+        <ul>
+          <li><strong>Does not upload data to any external server controlled by the developer.</strong></li>
+          <li><strong>Does not collect protected health information (&quot;PHI&quot;)</strong> as defined by HIPAA.</li>
+          <li>
+            <strong>Does not transmit your data outside your device</strong> except when you explicitly export,
+            share, or back up data using system features (e.g., iOS share sheets or encrypted device/iCloud backups).
+          </li>
+        </ul>
+        <div class="highlight">
+          <strong>Your responsibility:</strong> You are responsible for how you use RVU Zen in your practice
+          or workflow, including what information you choose to enter, how you secure your device, and how you
+          handle any exported files.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>5. No Medical, Legal, or Billing Advice</h2>
+        <p>
+          The App is designed as a personal productivity and tracking tool. It is <strong>not</strong>:
+        </p>
+        <ul>
+          <li>A medical billing service or coding authority.</li>
+          <li>A legal, tax, or compliance advisor.</li>
+          <li>A substitute for professional judgment, official coding references, or payer guidance.</li>
+        </ul>
+        <p>
+          All values (including wRVUs, CPT codes, conversion factors, estimates, or summaries) are provided
+          for convenience and may contain inaccuracies. You agree to verify codes, wRVU values, and any
+          financial or clinical implications against official CMS and payer documentation.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. User Responsibility</h2>
+        <p>You are solely responsible for:</p>
+        <ul>
+          <li>The accuracy and completeness of data you enter into the App.</li>
+          <li>Ensuring compliance with your employer’s policies, professional standards, and applicable laws.</li>
+          <li>Protecting sensitive information on your device, including use of passcodes, biometrics, and backups.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by law, RVU Zen is provided <strong>&quot;as is&quot;</strong>
+          and <strong>&quot;as available&quot;</strong>, without warranties of any kind, whether express or implied.
+        </p>
+        <p>RVU Zen and its developer are not liable for:</p>
+        <ul>
+          <li>Loss of data or corruption of locally stored information.</li>
+          <li>Coding or billing errors arising from use or misuse of the App.</li>
+          <li>Any direct, indirect, incidental, consequential, or special damages (including lost income) related to the App.</li>
+        </ul>
+        <p>
+          Your sole and exclusive remedy for dissatisfaction with the App is to stop using it and, if desired,
+          cancel your subscription through Apple.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Changes to the App or These Terms</h2>
+        <p>
+          The App may be updated from time to time to improve performance, add features, or address technical issues.
+          These Terms may also be updated periodically.
+        </p>
+        <p>
+          If you continue to use the App after changes to these Terms take effect, you are deemed to have accepted
+          the updated Terms.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Termination</h2>
+        <p>
+          RVU Zen may suspend or terminate your access to the App at any time if you violate these Terms or use
+          the App in a way that could cause harm to the App, its developer, or others.
+        </p>
+        <p>
+          You may stop using the App at any time by deleting it from your device and canceling any active subscription
+          through Apple.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Governing Law</h2>
+        <p>
+          These Terms are governed by the laws of the jurisdiction in which the developer is based, without regard
+          to conflict-of-law principles. Any disputes arising from or relating to these Terms or the App shall be
+          resolved in that jurisdiction’s courts, where permitted by law.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Contact</h2>
+        <p>
+          For questions about these Terms or RVU Zen, you may contact the developer at:<br />
+          <a href="mailto:rvuzen@protonmail.com">rvuzen@protonmail.com</a>
+        </p>
+      </section>
+
+      <p class="footer-note">
+        By downloading or using RVU Zen, you acknowledge that you have read, understood, and agree to be bound
+        by these Terms of Use.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
